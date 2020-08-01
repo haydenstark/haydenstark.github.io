@@ -1,0 +1,223 @@
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255,255,255);
+    background-color: rgb(216, 216, 216);
+    text-shadow: 1px 2px 3px rgb(100, 100, 100);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    z-index: -1;
+}
+
+
+
+
+/*NAVBAR*/
+.navbar  {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar a {
+    display: inline-block;
+    float: right;
+    color: rgb(255, 255, 255);
+    padding: 20px 20px;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.navbar a:hover {
+    color: rgb(184, 235, 189);
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+
+
+
+/*SPACING AND LAYOUT*/
+/*Blank columns are used to push all text
+to the right side of the screen*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.blank-title-column {
+    float: left;
+    width: 68%;
+    height: 500px;
+    margin-top: 30%;
+}
+
+.text-title-column {
+    float: left;
+    width: 32%;
+    height: 500px;
+    margin-top: 30%;
+}
+
+.blank-column {
+    float: left;
+    width: 62%;
+    height: 500px;
+    margin-top: 20%;
+}
+
+.text-column {
+    float: left;
+    width: 38%;
+    height: 500px;
+    margin-top: 20%;
+}
+
+
+
+
+/*HYPERLINKS*/
+/*This affects all <anchors> except the navbar*/
+.row a {
+    color: rgb(255,255,255);
+    text-decoration-color: rgb(255,255,255);
+    text-shadow: 2px 0px 3px rgb(100, 100, 100);
+}
+
+.row a:hover {
+    color: rgb(195, 235, 199);
+    text-decoration-color: rgb(195, 235, 199);
+}
+
+
+
+
+/*HOME/TITLE*/
+#home {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#home h3 {
+    margin-bottom: 0;
+}
+
+#home p {
+    margin-top: 0;
+    margin-left: 100px;
+    font-size: .4em;
+    letter-spacing: 2px;
+}
+
+
+
+
+/*ABOUT*/
+#about h3 {
+    text-align: center;
+    margin-right: 10px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1.4em;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+
+
+
+/*WORKS*/
+#works img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#works h2 {
+    font-size: 2em;
+    margin-left: 80px;
+    padding: 10px 0px;
+}
+
+#works h3 {
+    padding-top: 10px;
+}
+
+
+
+
+/*CONTACT*/
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgb(216, 216, 216);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    resize: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input::placeholder {
+    color: rgba(236, 236, 236, 0.75);
+}
+
+input[type=text]:hover {
+    border: 1px solid rgb(255, 255, 255, 0.75);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.75)
+}
+
+input[type=text], textarea {
+    outline: none;
+}
+
+input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 8px rgb(195, 235, 199);
+    border: 1px solid rgb(195, 235, 199, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+input[type=submit] {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(236, 236, 236, 0.75);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-left: 20%;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(216, 216, 216, 0.5);
+    padding: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(195, 235, 199);
+}
