@@ -63,28 +63,28 @@ to the right side of the screen*/
 
 .blank-title-column {
     float: left;
-    width: 68%;
+    width: 66%;
     height: 500px;
     margin-top: 30%;
 }
 
 .text-title-column {
     float: left;
-    width: 32%;
+    width: 34%;
     height: 500px;
     margin-top: 30%;
 }
 
 .blank-column {
     float: left;
-    width: 62%;
+    width: 60%;
     height: 500px;
     margin-top: 20%;
 }
 
 .text-column {
     float: left;
-    width: 38%;
+    width: 40%;
     height: 500px;
     margin-top: 20%;
 }
@@ -163,12 +163,17 @@ to the right side of the screen*/
 
 #works h3 {
     padding-top: 10px;
+    padding-left: 10px;
 }
 
 
 
 
 /*CONTACT*/
+#contact {
+    margin-right: 12px;
+}
+
 input[type=text] {
     width: 100%;
     padding: 15px;
