@@ -3,26 +3,37 @@
     <head>
         <title>Hayden Stark</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
         <link rel="stylesheet" type="text/css" href="./css/portfolio_stylesheet.css">
     </head>
 
-    <body>
+    <body class="fade-in" onscroll="scrollF()">
+        
 
         <!--BACKGROUND VIDEO-->
-        <video autoplay muted>
-            <source src="./imgs/background2.mp4" type="video/mp4" alt="">
-        </video>
+        <div class="video-container">
+            <video autoplay muted>
+                <source src="./imgs/background2.mp4" type="video/mp4" alt="">
+            </video>
+        </div>
 
 
         <!--NAVBAR-->
          <div class="navbar">
-            <a href="#contact"><li>contact</li></a>
+            <a href="#contact" onmouseover="dropdown()"><li>contact</li></a>
+                <div class="drop-content" onmouseleave="leaveDropdown()">
+                    <li>
+                        <a href="https://www.linkedin.com/in/hayden-stark-5182561b0/"><img src="./imgs/linkedinicon.png" alt="(LinkedIn)"></a>
+                        <a href="mailto:haydenstark@aol.com"><img src="./imgs/emailicon.png" alt="(Email)"></a>
+                    </li>
+                </div>
             <a href="#works"><li>works</li></a>
             <a href="#about"><li>about</li></a>
-            <a href="#home"><li>home</li></a>
+            <a href="#home" id="nav-home"><li>home</li></a>
         </div>
 
            
+
         <!--HOME/TITLE-->
             <div id="home" class="row">
                     <div class="blank-title-column">
@@ -37,6 +48,9 @@
                 </div>
              </div>
         
+
+
+
         <!--ABOUT-->
              <div id="about" class="row">
                     <div class="blank-column">
@@ -46,8 +60,8 @@
                     Soloist with Houston Ballet<br>
                     Teacher and Choreographer<br>
                  </h3>
-                 <p>
-                     Hi there! I'm Hayden - a graduate from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp and UI/UX Designer course; efficient in HTML, CSS, JavaScript, Python, C#, SQL, and more.
+                 <p id="read">
+                    &nbsp;Hi there! &nbsp;I'm Hayden &nbsp;-&nbsp; a graduate from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp and UI/UX Designer course; efficient in HTML, CSS, JavaScript, Python, C#, SQL, and more.
                      I'm currently a Soloist with <a href="https://www.houstonballet.org">Houston Ballet</a> and have loved the arts since I was young - I graduated high school with highest honors from the University of North Carolina School of the Arts and now teach and choreograph across multiple studios.
                      My aim is melding the arts and tech together and bringing them to life.
                  </p>
@@ -55,44 +69,58 @@
              </div>
 
 
+
+
              <!--WORKS-->
              <div id="works" class="row">
                     <div class="blank-column">
                     </div>
-                <div class="text-column">
+                <div class="text-column-short-half squish">
+                    <a href="https://github.com/haydenstark"><img src="./imgs/githubicon.png" alt="GitHub Icon"></a>
+                </div>
+                <div class="text-column-short-half squish">
                     <h2>
-                        <img src="./imgs/githubicon.png" alt="GitHub Icon">
-                        <a href="https://github.com/haydenstark">GitHub</a>
+                        Check out my <a href="https://github.com/haydenstark">GitHub</a> coding projects
                     </h2>
+                </div>
+                <div class="text-column-shorter-half">
+                    <a href="https://www.facebook.com/24309560583/videos/1206887046319991"><img src="./imgs/danceicon.jpg" alt="Dance Icon"></a>
+                </div>
+                <div class="text-column-shorter-half">
                     <h2>
-                        <img src="./imgs/linkedinicon.png" alt="LinkedIn Icon">
-                        <a href="https://www.linkedin.com/in/hayden-stark-5182561b0/">LinkedIn</a>
+                        And watch my <a href="https://www.facebook.com/24309560583/videos/1206887046319991">dancing</a> and editing skills in action!
                     </h2>
-                    <h3>
-                        <a href="https://www.facebook.com/24309560583/videos/1206887046319991">(Watch my dancing and editing skills in action)</a>
-                    </h3>
                 </div>
              </div>
 
              
 
+
              <!--CONTACT-->
              <div id="contact" class="row">
-                    <div class="blank-column">
+                    <div class="blank-column-last">
                     </div>
-                <div class="text-column">
+                <div class="text-column-short-half email">
                     <h2>
-                        I'd love to hear from you!<br>
-                        (Email me directly at haydenstark@aol.com)
+                        I'd love to hear from you!
+                        <a href="mailto:haydenstark@aol.com">Email</a> is the best way to get ahold of me
                     </h2>
-                    <form action="" method="get">
-                            <input type="text" placeholder="Name">
-                            <input type="text" id="Email" name="Email" placeholder="Email">
-                            <input type="text" id="Message" name="Message" placeholder="Message">
-                            <input type="submit" value="Submit">
-                    </form>
+                </div>
+                <div class="text-column-short-half email">
+                    <a href="mailto:haydenstark@aol.com"><img src="./imgs/emailicon.png"></a>
+                </div>
+                <div class="text-column-short-last social">
+                    <h2>
+                        Feel free to also visit my <a href="https://www.linkedin.com/in/hayden-stark-5182561b0/">LinkedIn</a> and <a href="https://www.instagram.com/hayden.stark/">Instagram</a>
+                    </h2>
+                        <a href="https://www.instagram.com/hayden.stark/"><img src="./imgs/instagramicon.png"></a>
+                        <a href="https://www.linkedin.com/in/hayden-stark-5182561b0/"><img src="./imgs/linkedinicon.png"></a>
                 </div>
              </div>
 
+             
+
+
+        <script src="./js/portfolio.js"></script>
     </body>
 </html>
