@@ -1,5 +1,21 @@
 window.onpageshow = fadeIn()
 
+if (window.innerWidth < 1025 && window.innerWidth < window.innerHeight) {
+    if ('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0) { 
+        var r = document.getElementById("rotate");
+        r.style.opacity = 1;
+        r.style.visibility = "visible";
+        setTimeout(function() {
+            r.style.opacity = 0;
+            r.style.visibility = "hidden";
+        }, 3500)
+    }
+}
+if (screen.width < 900 && screen.height < 900) {
+    document.getElementById("background-video").setAttribute('poster', 'imgs/Headshot_BW.png');
+}
+
+
 function fadeIn() {
     document.body.classList.remove("fade-in");
 }

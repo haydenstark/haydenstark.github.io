@@ -44,6 +44,7 @@ body {
 
 video {
     width: 100%;
+    min-height: 100%;
 }
 
 
@@ -146,62 +147,54 @@ to the right side of the screen*/
 .blank-title-column {
     float: left;
     width: 66%;
-    height: 500px;
+    height: 100vh;
     margin-top: 30%;
 }
 
 .text-title-column {
     float: left;
     width: 34%;
-    height: 500px;
+    height: 100vh;
     margin-top: 30%;
 }
 
 .blank-column {
     float: left;
     width: 60%;
-    height: 600px;
+    height: 100vh;
     margin-top: 14%;
 }
 
 .text-column {
     float: left;
     width: 40%;
-    height: 600px;
+    height: 100vh;
     margin-top: 14%;
 }
 
 .text-column-half {
     float: left;
     width: 20%;
-    height: 600px;
+    height: 100vh;
     margin-top: 14%;
 }
 
 .text-column-short-last {
     float: left;
     width: 40%;
-    height: 200px;
-    margin-top: -5%;
 }
 
 .text-column-short-half {
     float: left;
     width: 20%;
-    height: 300px;
+    height: 40vh;
     margin-top: 14%;
-}
-
-.text-column-shorter-half {
-    float: left;
-    width: 20%;
-    height: 300px;
 }
 
 .blank-column-last {
     float: left;
     width: 60%;
-    height: 500px;
+    height: 85vh;
     margin-top: 14%;
 }
 
@@ -289,10 +282,14 @@ to the right side of the screen*/
     font-size: 2.2vw;
 }
 
-.squish {
+/* fine-tuning on 'works' layout without affecting other columns */
+.works-top {
     margin-top: 22%;
-    margin-bottom: -10%;
 }
+.works-btm {
+    margin-top: -18.5vh;
+}
+
 
 
 
@@ -313,7 +310,11 @@ to the right side of the screen*/
 }
 
 .email {
-    margin-top: 20%;
+    margin-top: 24%;
+}
+
+.social {
+    margin-top: -5%;
 }
 
 .social img {
@@ -344,4 +345,30 @@ img {
     transform: scale(1.08);
     opacity: .9;
     box-shadow: 3px 3px 8px 3px rgba(114, 158, 120, 0.5);
+}
+
+
+/* Rotate notice */
+#rotate {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 35vh;
+    transition: opacity 1s, visibility 1s;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-shadow: none;
+    width: 70vw;
+    padding: 8%;
+    border-radius: 14px;
+    font-size: 2.4vh;
+}
+
+#rotate img {
+    height: 10vh;
 }
